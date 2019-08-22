@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link
+      href="https://unpkg.com/sanitize.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="utf-8">
+    <title>AI Consultation Result</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="topLink">TOP</a>
+      <a href="/how" class="howtoLink">How to use...?</a>
+    </header>
+    <div class="result">
+      <p>The Expected Populality Score is...</p>
+      <p class="score">{{score}} %</p>
+      <img class="original_img" src="{{ img_url }}" alt="selected image">
+      <p class="additionalInfo">*AI calculation process</p>
+      <img class="compared_img" src="{{ image_result }}" alt="compared image">
+    </div>
+    <div class="about">
+      about us:
+      <a href="https://www.instagram.com/__kyotofood__/?igshid=flgu2p38zclc" target="_blank">Instagram</a>
+      <a href="https://shidanstreet-web.jimdosite.com" target="_blank">Web site</a>
+    </div>
+  </body>
+</html>

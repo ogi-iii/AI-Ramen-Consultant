@@ -1,0 +1,279 @@
+body {
+  font-family: 'Leckerli One', cursive;
+  background-color: #FFFFCC;
+  margin-top: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  background-color: #FFCC33;
+  line-height: 50px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+header .topLink {
+  float: left;
+  padding-left: 50px;
+}
+
+header .howtoLink {
+  float: right;
+  padding-right: 50px;
+}
+
+.title img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.title span{
+  display: inline-block;
+  height: 120px;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+form {
+  margin: 20px 50px;
+  text-align: center;
+}
+
+form .loading {
+  font-size: 40px;
+}
+
+form .loading_img {
+    width: 70px;
+    height: 70px;
+}
+
+input {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #C0C0C0;
+}
+
+button {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 7px;
+  background-color: #FFCC33;
+  font-family: 'Leckerli One', cursive;
+}
+
+.explainContent {
+  text-align: center;
+  margin: 50px;
+}
+
+.addedExplain {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.explainContent h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.explain {
+  font-size: 30px;
+}
+
+.explainContent img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.result {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.result .score {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.result .original_img {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.result .additionalInfo {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.result .compared_img {
+  display: block;
+  height: 200px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.about {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width:800px){
+/*画面幅が800pxまでの時*/
+
+  form .loading {
+    font-size: 30px;
+  }
+
+  form .loading_img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .about {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width:500px){
+/*画面幅が500pxまでの時*/
+
+  header {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  header .topLink {
+    padding-left: 25px;
+  }
+
+  header .howtoLink {
+    padding-right: 25px;
+  }
+
+  .title img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .title span{
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .title {
+    font-size: 60px;
+    margin: 0 0 5px 0;
+  }
+
+  form {
+    margin: 20px 10px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 7px;
+    font-size: 24px;
+  }
+
+  form .loading {
+    font-size: 20px;
+  }
+
+  form .loading_img {
+      width: 30px;
+      height: 30px;
+  }
+
+
+  .explainContent {
+    margin: 30px;
+  }
+
+  .addedExplain {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  .explainContent h1 {
+    font-size: 20px;
+  }
+
+  .explain {
+    font-size: 18px;
+  }
+
+  .explainContent img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .result {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .result .score {
+    font-size: 30px;
+  }
+
+  .result .original_img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .result .additionalInfo {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .result .compared_img {
+    height: 80px;
+    width: 160px;
+  }
+
+  .about {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+}

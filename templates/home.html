@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link
+      href="https://unpkg.com/sanitize.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>AI Ramen Consultant</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="topLink">TOP</a>
+      <a href="/how" class="howtoLink">How to use...?</a>
+    </header>
+    <p class="title"><img src="../static/img/human.png" alt="AI consultant image" align="middle"><span>AI</span></p>
+    <p class="title">Ramen</p>
+    <p class="title">Consultant</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" id="img_file" name="img_file" accept="image/*">
+      <div id="loading_now">
+        <p class="loading">now analyzing... <img src="../static/img/loading.gif" alt="loading gif" class="loading_img"></p>
+      </div>
+      <button type="submit" name="button" onclick="clickBtn()">Image Analyze</button>
+    </form>
+    <script type="text/javascript">
+　   //ここにjavascriptを書きます。
+    document.getElementById("loading_now").style.display ="none";
+
+    function clickBtn(){
+    const l = document.getElementById("loading_now");
+
+    if(l.style.display=="block"){
+    // noneで非表示
+    l.style.display ="none";
+    }else{
+    // blockで表示
+    l.style.display ="block";
+    }
+    }
+    </script>
+  </body>
+</html>
